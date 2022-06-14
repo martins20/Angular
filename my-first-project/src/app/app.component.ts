@@ -2,7 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: '<router-outlet></router-outlet>',
+  template: `
+    <!-- To pass some prop to other component just pass the [component-variable-or-method-name]="value" -->
+    <app-title title="Hello"></app-title>
+    <router-outlet></router-outlet>
+  `,
 })
 export class AppComponent implements OnInit {
   constructor() {}
