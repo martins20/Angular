@@ -23,6 +23,6 @@ export class TitleComponent implements OnInit, OnChanges {
 
   // Life cicle of angular to execute always when component has some change from @Input decorator
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('Changes made successfully');
+    // console.log('Changes made successfully');
   }
 }
