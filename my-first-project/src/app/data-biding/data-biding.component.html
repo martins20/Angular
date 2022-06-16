@@ -52,3 +52,20 @@
   (mousemove)="mouseMoveTest($event)"
 ></div>
 {{ position.x }} - {{ position.y }}
+
+<br />
+<br />
+
+<h1>Two-way Bidings</h1>
+<small>
+  Two-way binding gives components in your application a way to share data. Use
+  two-way binding to listen for events and update values simultaneously between
+  parent and child components.
+</small>
+
+<br />
+<br />
+
+<input type="text" [(ngModel)]="name">
+
+{{name}}
