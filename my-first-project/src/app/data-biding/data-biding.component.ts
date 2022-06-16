@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBidingComponent implements OnInit {
   public name: string = 'Martins';
-  public age: number = 21
+  public age: number = 21;
+
+  public isButtonDisabled: boolean = true;
+
+  public imageSource: string = 'https://www.github.com/martins20.png';
+
+  public imageAlt: string = 'A dinamic image using a property biding';
 
   constructor() {}
 

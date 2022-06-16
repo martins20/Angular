@@ -5,8 +5,26 @@
   delimiters.
 </small>
 
+<br />
+
 <p>{{ name }} has {{ age }} years old !</p>
 <p>{{ name }} has more than 28 years old ?</p>
 <p>{{ age > 28 }}</p>
 <p>How much is {{ age }} + 1 ??</p>
 <p>{{ age + 1 }}</p>
+
+<hr />
+
+<h1>Property Bindings</h1>
+<small>
+  Property binding in Angular helps you set values for properties of HTML
+  elements or directives. Use property binding to do things such as toggle
+  button functionality, set paths programmatically, and share values between
+  components.
+</small>
+
+<br />
+
+<button [disabled]="isButtonDisabled">Some button</button>
+
+<img [src]="imageSource"  [alt]="imageAlt">
