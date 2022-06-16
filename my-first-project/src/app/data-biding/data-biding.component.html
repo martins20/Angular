@@ -1,4 +1,4 @@
-<h1>INTERPOLATIONS</h1>
+<h1>Interpolations</h1>
 <small>
   Interpolation refers to embedding expressions into marked up text. By default,
   interpolation uses the double curly braces {{ "{{" }} and {{"}}"}} as
@@ -27,4 +27,28 @@
 
 <button [disabled]="isButtonDisabled">Some button</button>
 
+<br />
+
 <img [src]="imageSource" [alt]="imageAlt" />
+
+<hr />
+
+<br />
+<br />
+
+<h1>Event Bidings</h1>
+<small>
+  Event binding lets you listen for and respond to user actions such as
+  keystrokes, mouse movements, clicks, and touches.
+</small>
+
+<br />
+<br />
+
+<button (click)="callAlertEvent()">Ivoke alert event</button>
+
+<div
+  style="background: red; width: 300px; height: 300px"
+  (mousemove)="mouseMoveTest($event)"
+></div>
+{{ position.x }} - {{ position.y }}

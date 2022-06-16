@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+type Position = {
+  x: number;
+  y: number;
+};
+
 @Component({
   selector: 'app-data-biding',
   templateUrl: './data-biding.component.html',
@@ -15,7 +20,20 @@ export class DataBidingComponent implements OnInit {
 
   public imageAlt: string = 'A dinamic image using a property biding';
 
+  public position: Position = { x: 0, y: 0 };
+
   constructor() {}
+
+  public callAlertEvent(): void {
+    window.alert('I was called !!!');
+  }
+
+  public mouseMoveTest(event: MouseEvent) {
+    this.position.x = event.offsetX;
+    this.position.y = event.offsetY;
+
+    console.log(this.position);
+  }
 
   ngOnInit(): void {}
 }
